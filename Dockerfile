@@ -30,7 +30,7 @@ RUN service postgresql start && \
 # Set up the working directory for the app
 WORKDIR /app
 COPY . .
-
+RUN chmod +x ./run_test.sh
 # Install Node.js dependencies
 RUN npm install
 
